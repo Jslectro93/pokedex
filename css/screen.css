@@ -1,0 +1,58 @@
+.screen {
+
+}
+
+.screen-border {
+    padding: 1.5rem;
+    padding-block-end: 2.75rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    clip-path: polygon(0 0,100% 0, 100% 100%, 2rem 100%, 0 calc(100% - 2.75rem));
+    position: relative;
+    block-size: 14.375rem;
+    box-sizing: border-box;
+}
+
+.screen-border::after {
+    content: " ";
+    inline-size: 1rem;
+    block-size: 1rem;
+    background: var(--primary);
+
+    border-radius: 50%;
+    position: absolute;
+    inset-block-end: 1rem;
+    inset-inline-start: 129px;
+}
+
+.screen-border::before {
+    content: " ";
+    inline-size: 1rem;
+    block-size: 1rem;
+    background: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    inset-block-end: 1rem;
+    inset-inline-start: 160px;
+
+}
+
+.screen-safeArea {
+    padding: 1rem;
+    background: #8db9dc;
+    border-radius: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 10rem;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.screen-border .burgerButton {
+    inline-size: 1.375rem;
+    block-size: 1rem;
+    position: absolute;
+    inset-inline-end: 1.5rem;
+    inset-block-end: 1rem;
+}

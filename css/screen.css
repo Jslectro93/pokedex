@@ -47,6 +47,7 @@
     block-size: 10rem;
     box-sizing: border-box;
     background-size: cover;
+    background-position: center;
 }
 
 .screen-border .burgerButton {

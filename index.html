@@ -9,19 +9,17 @@
   <meta property="og:title" content="Pokedex" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jslectro93.github.io/pokedex/" />
-  <meta property="og:image:width" content="400" />
-  <meta property="og:image:height" content="300" />
-  <meta property="og:image" content="https://jslectro93.github.io/pokedex/design/Pokedex.jpg" />
+  <meta property="og:image" og:image:width="520" content="https://pokedex-ten-mauve.vercel.app/design/Pokedex.jpg" />
   <link rel="stylesheet" href="./css/index.css">
   <title>Pokedex</title>
 </head>
 
 <body>
-  <main class="pokedex is-open" tabindex="0">
+  <main class="pokedex" id="pokedex" tabindex="0">
     <section class="pokedex-main" aria-label="General Pokemon  information">
       <div class="header-shadow">
         <div class="header">
-          <span class="light is-big is-sky"></span>
+          <span class="light is-big is-sky" id="light"></span>
           <span class="light is-red"></span>
           <span class="light is-yellow"></span>
           <span class="light is-green"></span>
@@ -29,17 +27,22 @@
       </div>
       <div class="screen">
         <div class="screen-border">
-          <div class="screen-safeArea">
+          <div class="screen-safeArea" id="screen">
+            <img src="" id="image" alt="">
           </div>
           <img class="burgerButton" src="./icons/button.png" alt="">
         </div>
       </div>
       <div class="actions">
-        <div class="variants"></div>
-        <form role="search" id="search" class="search"><input type="text" name="id" placeholder="Who is this Pokemon?"
+        <div class="variants">
+          <button id="" class="variantBig"></button>
+          <button id="" class="variantFlat is-yellow"></button>
+          <button id="" class="variantFlat is-black"></button>
+        </div>
+        <form role="search" id="form" class="search"><input type="text" name="id" placeholder="Who is this Pokemon?"
             autocomplete="off"></form>
         <div class="description">
-          <p>
+          <p id="description">
             Search for a pokemon to get all of its characteristics
           </p>
         </div>
@@ -56,10 +59,12 @@
     </div>
     <section class="cover-back" aria-label="Pokemon stats">
       <div class="stats">
-        stats
+        <canvas id="stats" width="200" height="200"></canvas>
       </div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>

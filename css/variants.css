@@ -1,3 +1,39 @@
 .variants {
     grid-area: variants;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.variants .variantBig {
+    background: var(--secondary);
+    filter: drop-shadow(2px 2px 0 var(--black));
+    inline-size: 3.25rem;
+    block-size: 3.25rem;
+    border-radius: 50%;
+    margin-inline-end: .5rem;
+    border: none;
+}
+
+.variants .variantFlat {
+    inline-size: 1.875rem;
+    block-size: .5rem;
+    background: blue;
+    border-radius: 1.25rem;
+    border: none;
+}
+
+
+.variants .variantBig:active, .variants .variantFlat:active {
+    transform: scale(.95);
+}
+
+.variants .variantFlat.is-yellow {
+    background: #FECB2F;
+    filter: drop-shadow(2px 2px 0 #D2AB33);
+}
+
+.variants .variantFlat.is-black {
+    background: var(--secondary);
+    filter: drop-shadow(2px 2px 0 var(--black));
 }

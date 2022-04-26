@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 5.5rem;
     grid-template-rows: repeat(2, auto) 1fr;
     gap: 1.5rem;
-    overflow: auto;
+    /* overflow: auto; */
     grid-template-areas: 
     "variants variants" 
     "search navigation" 

@@ -4,7 +4,7 @@ import { createChart } from "./charts.js";
 const $image = document.querySelector("#image");
 const $description = document.querySelector("#description");
 const $screen = document.querySelector("#screen");
-const $light = document.querySelector("#light");
+export const $light = document.querySelector("#light");
 
 export function setImage(image) {
   $image.src = image;
